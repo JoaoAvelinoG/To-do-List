@@ -5,10 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-do list</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-  <h1>To-do List</h1>
+  <div class="container">
+    <div class="todoArea">
+      <h1>To-do List!✅</h1>
+      <hr>
+      <div class="addTask">
+        <h4 class="mb">Adicione sua tarefa</h4>
+        <input class="mb" type="text" placeholder="O que você vai fazer?">
+        <button class="addButton ml">Adicionar</button>
+        <hr>
+      </div>
+      <div class="searchTask">
+        <h4 class="mb">Pesquisar tarefa</h4>
+        <input class="mb" type="text" placeholder="Buscar...">
+        <button class="ml">
+          <span class="material-icons" style="font-size: 16px; color: #f1f1f1;">search</span>
+        </button>
+        <hr>
+        <div class="taskArea">
+          <h2>Suas Tarefas:</h2>
+          <div>
+            <ul>
+              <!-- Estrutura que tem que ser criada ao clicar. -->
+              <li class="flex mt">
+                <h4>Teste1</h4>
+                <div class="taskButtons">
+                  <button><span class="material-icons" style="font-size: 16px; color: #f1f1f1;">check</span></button>
+                  <button><span class="material-icons" style="font-size: 16px; color: #f1f1f1;">edit</span></button>
+                  <button><span class="material-icons" style="font-size: 16px; color: #f1f1f1;">delete</span></button>
+                </div>
+              </li>
+              <hr>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>
